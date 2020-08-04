@@ -2,8 +2,8 @@
 
 .card-square {
   position: relative;
-  width: 50%;
-  height: 50%;
+  width: calc(100% / 2);
+  height: calc(100% / 3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@
   h1 {
     position: absolute;
     font-size: 2rem;
-    color: white;
+    color: $textBlack;
     font-weight: $bold;
     bottom: 5%;
   }

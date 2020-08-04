@@ -1,10 +1,25 @@
 @import "../../base.scss";
 
 .navbar {
-  width: 100px;
-  height: 100vh;
+  min-width: 80px;
+  min-height: 100vh;
+  max-width: 80px;
+  max-height: 100vh;
   background-color: $backgroundBase;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  .icon {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    color: $primaryColor;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }
